@@ -1,7 +1,6 @@
 pipeline {
     agent any 
     tools { 
-        maven 'maven'
         nodejs 'node'
     }
     stages {
@@ -12,7 +11,7 @@ pipeline {
         }
         stage ("Clone repo"){
             steps {
-                sh "git https://github.com/MaBouz/angular-jenkins.git"
+                sh "git clone https://github.com/MaBouz/angular-jenkins.git"
             }
         }
         stage ("Generate frontend image") {
