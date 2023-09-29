@@ -12,7 +12,7 @@ pipeline {
         }
         stage ("Clone repo"){
             steps {
-                sh "git clone https://github.com/MaBouz/springboot-angular-mysql-docker.git"
+                sh "git https://github.com/MaBouz/angular-jenkins.git"
             }
         }
         stage ("Generate frontend image") {
